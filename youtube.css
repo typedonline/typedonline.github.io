@@ -14,6 +14,7 @@ cursor: pointer;
 html, body, body * {
 background-image: url("website_background.png");
 background-repeat: no-repeat;
+background-size: contain;
 }
 html, body, body * {
 color: white;
