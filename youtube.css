@@ -20,3 +20,6 @@ background-size: cover;
 html, body, body * {
 color: white;
 }
+a, a * {
+color: white;
+}
