@@ -12,8 +12,8 @@ margin: 4px 2px;
 cursor: pointer;
 }
 html, body, body * {
-      background-image: url("website_background.png");
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
+background-image: url("website_background.png");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
 }
