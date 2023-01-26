@@ -5,7 +5,7 @@
     <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/typedonline.github.io/main/image-modified.ico">
     <link type="text/css" rel="stylesheet" href="youtube.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
+  
   <style>
     body {
   background-image: url('https://raw.githubusercontent.com/typedonline/typedonline.github.io/8ed819b0a4b96e9d96bca4003847ae7239a1f25e/website_backround.png');
@@ -13,15 +13,61 @@
   background-attachment: fixed;
   background-size: cover;
 }
+    
+    /* Style the header */
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #000000;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+    
   </style>
+   <script type="text/javascript">
+    // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+    </script>
+    </head>
   <body style="color:'White'">
   <h2 style="color:'White'">
   <h3 style="color:'White'">  
   <h1 style="color:'White'">
   <body style="font-family:'Helvetica'">
-    <h1>
-      <center> <img src="https://raw.githubusercontent.com/typedonline/typedonline.github.io/main/image-modified.png" height=35 width=35> TYP3D </center>
-    </h1>
+    <div class="header" id="myHeader">
+  <h2>TYP3D</h2>
+</div>
     <br>
     <center>
       <b>Hi! You might not know me, but I am Typed, or TYP3D. I love programming, designing, photography, and cinematography! </b>
