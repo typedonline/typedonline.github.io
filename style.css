@@ -76,3 +76,20 @@ h1.logo {
   background-color: #0600ab; /* Change the background color on hover */
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust the height as needed */
+}
+
+.my-button {
+  /* Your button styles here */
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
