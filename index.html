@@ -1,141 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>TYP3D</title>
-    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/typedonline.github.io/main/image-modified.ico">
-    <link type="text/css" rel="stylesheet" href="index.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  background-image: url('https://raw.githubusercontent.com/typedonline/typedonline.github.io/8ed819b0a4b96e9d96bca4003847ae7239a1f25e/website_backround.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-
-}
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.top-container {
-  background-color: #000000;
-  padding: 30px;
-  text-align: center;
-}
-
-
-.header {
-  padding: 10px 16px;
-  background: black;
-  color: white;
-  opacity: 0.80;
-}
-
-.content {
-  padding: 16px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 102px;
-}
-
-
-.ht {
-    opacity: 1;
-    }
-
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>WebDev Tips and Tricks</title>
 </head>
 <body>
+  <header>
+    <div class="container">
+      <h1 class="logo">WebDev Tips and Tricks</h1>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for a language...">
+      </div>
+    </div>
+  </header>
+  
+  <div class="content">
+    <div class="tips-container" id="tipsContainer">
+      <!-- Tips and tricks will be dynamically added here -->
+    </div>
+  </div>
 
-<div class="header" id="myHeader">
-  <p align="center" class="ht"> <h2>TYP3D</h2></center> </p>
-</div>
+  <footer>
+    <p>&copy; 2023 WebDev Tips and Tricks. All rights reserved.</p>
+  </footer>
 
-
-<div class="content">
-    <body style="font-family:'Helvetica'">
-    
-    <br>
-    <center>
-      <b>Hi! You might not know me, but I am Typed, or TYP3D. I love programming, designing, photography, and cinematography! </b>
-    </center>
-    <br>
-    <h2>
-      <center> Projects: </center>
-    </h2>
-    <center>
-      <b>I am working on <a href="https://azumi.is-an.app" target="_blank">Azumi</a>, a <a href="https://pycord.dev" target="_blank">Pycord</a> Discord bot with <a href="https://aqua.is-a.dev/" target="_blank">AquaQuokka</a>
-      </b>
-    </center>
-    <br>
-    <center>
-      <b>I am also working on some filming projects, which you can see on my <a href="https://youtube.com/@TYP3D" target="_blank">YouTube Channel</a>
-      </b>
-    </center>
-    <br>
-    <br>
-    <h3>
-      <center> Check out some of my content: </center>
-    </h3>
-    <center>
-      <button type="button" onclick="location.href='https://youtube.com/@TYP3D'">YouTube</button>
-      <br>
-      <BR>
-      <br>
-      <br>
-      <br>
-      <h3>
-        <center> Check out my <a href="https://github.com/TYP3D" target="_blank">GitHub</a> stats: </center>
-      </h3>
-      <picture>
-        <img src="https://github-readme-stats.vercel.app/api?username=TYP3D&show_icons=true&count_private=true&theme=dark" />
-      </picture>
-      <br>
-      <br>
-      <br>
-      <br>
-      <h3>
-        <center> Need to message me? You can contact me through <a href="https://discord.com/users/807765048155701288" target="_blank">Discord</a>! </center>
-      </h3>
-      <center>
-        <picture>
-          <img src="https://lanyard-profile-readme.vercel.app/api/807765048155701288?hideTimestamp=true&hideBadges=false" />
-        </picture>
-      </center>
-    </center>
-  </body>
-<br>
-    <br>
- © TYP3D 2023
-
-
-</div>
-
-<script>
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
-
+  <script src="script.js"></script>
 </body>
 </html>
