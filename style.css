@@ -59,21 +59,3 @@ h1.logo {
 }
 
 
-.my-button {
-  background-color: #0f08cf; /* Set the background color of the button */
-  border: none; /* Remove the button border */
-  color: white; /* Set the text color of the button */
-  padding: 10px 20px; /* Adjust the padding to control the button size */
-  text-align: center; /* Center the text within the button */
-  text-decoration: none; /* Remove any text decoration */
-  display: inline-block; /* Make the button display as an inline block */
-  font-size: 16px; /* Set the font size of the button */
-  cursor: pointer; /* Change the cursor to a pointer on hover */
-  border-radius: 4px; /* Add rounded corners to the button */
-}
-
-.my-button:hover {
-  background-color: #0600ab; /* Change the background color on hover */
-}
-
-
