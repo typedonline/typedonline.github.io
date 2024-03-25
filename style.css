@@ -1,1 +1,13 @@
+/*We have already set the text-align property as center in the HTML code. Below provided CSS is added just to make the output look better.*/
+body {
+     margin: auto;
+     width: 640px;
+     padding: 50px;
+     font-family: 'Avenir', sans-serif;
+     color: #33475b;
+}
+ img{
+     padding: 10px;
+}
+
 
