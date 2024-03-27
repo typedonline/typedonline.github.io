@@ -1,4 +1,4 @@
-# typedonline.github.io
+# typed.is-a.dev
 
 
-Hey! This site is for TYP3D, a person in the world..
+https://youtube.com/@formulametro
