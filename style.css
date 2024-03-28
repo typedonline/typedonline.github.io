@@ -43,8 +43,6 @@ body {
     position: absolute;
     display: block;
     list-style: none;
-    width: 30px; /* Adjust size as needed */
-    height: 30px; /* Adjust size as needed */
     background: #4a4a4a;
     bottom: 0;
     transform: translateY(100vh);
@@ -53,30 +51,45 @@ body {
 
 .circles li:nth-child(1) {
     left: 5%;
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    background: #333333;
     animation-delay: 0s;
     animation-duration: 10s; /* Adjust speed as needed */
 }
 
 .circles li:nth-child(2) {
     left: 25%; /* Adjust left position */
+    width: 25px; /* Adjust size as needed */
+    height: 25px; /* Adjust size as needed */
+    background: #555555;
     animation-delay: 3s; /* Adjust delay as needed */
     animation-duration: 12s; /* Adjust speed as needed */
 }
 
 .circles li:nth-child(3) {
     left: 45%; /* Adjust left position */
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+    background: #777777;
     animation-delay: 6s; /* Adjust delay as needed */
     animation-duration: 8s; /* Adjust speed as needed */
 }
 
 .circles li:nth-child(4) {
     left: 65%; /* Adjust left position */
+    width: 35px; /* Adjust size as needed */
+    height: 35px; /* Adjust size as needed */
+    background: #999999;
     animation-delay: 9s; /* Adjust delay as needed */
     animation-duration: 15s; /* Adjust speed as needed */
 }
 
 .circles li:nth-child(5) {
     left: 85%; /* Adjust left position */
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    background: #b0b0b0;
     animation-delay: 12s; /* Adjust delay as needed */
     animation-duration: 10s; /* Adjust speed as needed */
 }
