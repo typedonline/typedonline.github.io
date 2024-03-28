@@ -1,10 +1,74 @@
-body {
-     margin: auto;
-     width: 640px;
-     padding: 50px;
-     font-family: 'Avenir', sans-serif;
-     color: #ffff;
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added to include padding and border in the element's total width and height */
 }
- img{
-     padding: 10px;
+
+body {
+    font-family: 'Exo', sans-serif;
+    background-color: #000000;
+    overflow-x: hidden; /* Added to prevent horizontal scroll */
+}
+
+.context {
+    width: 100%;
+    position: relative; /* Changed to relative to align content */
+    z-index: 1; /* Added to ensure content is above the circles */
+}
+
+.context h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+.area {
+    position: fixed; /* Changed to fixed to position the circles relative to the viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Moved behind the content */
+}
+
+.circles {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: #4a4a4a;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+/* Other li styles... */
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
 }
