@@ -1,10 +1,13 @@
 /* Your existing CSS */
 body {
   margin: auto;
-  width: 640px;
-  padding: 50px;
+  width: 100%;
+  height: 100%;
+  padding: 0;
   font-family: 'Avenir', sans-serif;
   color: #ffff;
+  overflow: hidden; /* Prevent scrollbars */
+  position: relative; /* Ensure proper positioning of absolute elements */
 }
 
 img {
@@ -15,9 +18,11 @@ img {
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
 
 .hero {
-  background-color: #0040C1;
-  position: relative;
-  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   font-family: 'Montserrat', sans-serif;
 }
@@ -34,8 +39,8 @@ img {
 
 .cube {
   position: absolute;
-  top: 80vh;
-  left: 45vw;
+  top: 80%;
+  left: 45%;
   width: 10px;
   height: 10px;
   border: solid 1px darken(#0040C1, 8%);
@@ -50,32 +55,32 @@ img {
 
 .cube:nth-child(2) {
   animation-delay: 2s;
-  left: 25vw;
-  top: 40vh;
+  left: 25%;
+  top: 40%;
 }
 
 .cube:nth-child(3) {
   animation-delay: 4s;
-  left: 75vw;
-  top: 50vh;
+  left: 75%;
+  top: 50%;
 }
 
 .cube:nth-child(4) {
   animation-delay: 6s;
-  left: 90vw;
-  top: 10vh;
+  left: 90%;
+  top: 10%;
 }
 
 .cube:nth-child(5) {
   animation-delay: 8s;
-  left: 10vw;
-  top: 85vh;
+  left: 10%;
+  top: 85%;
 }
 
 .cube:nth-child(6) {
   animation-delay: 10s;
-  left: 50vw;
-  top: 10vh;
+  left: 50%;
+  top: 10%;
 }
 
 @keyframes cube {
