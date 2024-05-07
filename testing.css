@@ -1,15 +1,10 @@
-/* Basic */
-@import url("https://use.typekit.net/ovt6ynt.css");
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Spectral:wght@200;300;400;500;600;700;800&display=swap");
-
 body {
   padding: 0;
   margin: 0;
   height: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: Arial, sans-serif;
   background: linear-gradient(#141e30, #243b55);
 }
-
 .title {
   text-align: center;
   padding: 50px 0px 25px 0;
@@ -18,7 +13,6 @@ body {
   color: #21222c;
   font-family: "Playfair Display SC";
 }
-
 .wrapper {
   background-color: #f6f8ff;
   width: 100%;
@@ -55,22 +49,20 @@ body {
   text-align: center;
   margin: auto;
 }
-
 .container .card {
   max-width: 600px;
   min-height: 140px;
   min-width: 595px;
+
   background-color: white;
   border-radius: 10px;
   border: 1px solid #e3e3e3;
   margin: 0 auto;
 }
-
 .tabs {
   text-align: left;
   position: relative;
 }
-
 .tabs input {
   position: absolute;
   opacity: 0;
@@ -81,7 +73,6 @@ body {
 .tabs input + label:hover {
   color: #777;
 }
-
 .tabs .tabsShadow {
   width: 100%;
   padding: 10px;
@@ -105,11 +96,9 @@ body {
 #tab-1:checked ~ .glider {
   left: 0px;
 }
-
 #tab-2:checked + label {
   color: #51a14c;
 }
-
 #tab-2:checked ~ .glider {
   background: linear-gradient(90deg, #51a14c 0%, #10c33e 100%);
   box-shadow: 0px 0px 8px 0px rgba(47, 187, 12, 0.62);
@@ -150,7 +139,7 @@ body {
   border-radius: 7px 7px 0 0 !important;
   border-top: 1px solid #3b3d3f;
   letter-spacing: 0.1666666667em !important;
-  font-family: "antique-olive" !important;
+  font-family: Arial, sans-serif;
   background: hsl(232deg 6% 17%);
   cursor: pointer;
 }
@@ -192,10 +181,9 @@ body {
   color: #f0f2fc;
   line-height: 30px;
   margin-top: 10pt;
-  font-family: "freight-display-pro";
+  font-family: Arial, sans-serif;
   font-weight: 300 !important;
 }
-
 h2.tab-title.tab-warning,
 h2.tab-title.tab-success,
 h2.tab-title.tab-primary,
@@ -217,7 +205,7 @@ h2.tab-title.tab-default {
   text-transform: capitalize;
   font-size: 24px;
   letter-spacing: 0px;
-  font-family: "Manrope" !important;
+  font-family: Arial, sans-serif !important;
   font-weight: 800 !important;
 }
 
@@ -249,28 +237,22 @@ h2.tab-title.tab-warning {
   margin: auto !important;
   padding: 0;
 }
-
 label.tab.tab-primary {
   border-radius: 6pt 0 0 6pt;
 }
-
 label.tab.tab-warning {
   border-radius: 0 6pt 6pt 0;
 }
-
 #tab-1:checked + label {
   color: deepskyblue;
 }
-
 #tab-3:checked + label {
   color: #ffadfa;
   color: #ffaa75;
 }
-
 #tab-4:checked + label {
   color: #ffadfa;
 }
-
 #tab-1:checked ~ .glider {
   left: 1.6%;
 }
@@ -278,7 +260,6 @@ label.tab.tab-warning {
 #tab-2:checked ~ .glider {
   left: 21.85%;
 }
-
 #tab-3:checked ~ .glider {
   background: linear-gradient(
     90deg,
@@ -318,7 +299,6 @@ label.tab.tab-warning {
 
 span.numit {
   font-size: 12pt;
-  font-family: "muli";
   font-weight: 600;
   text-shadow: 0.5px 0.5px 0.5px #e7e9f5;
   color: #0e101a;
