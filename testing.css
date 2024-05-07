@@ -12,13 +12,9 @@
 }
 
 .social-media-button {
-  -ms-transform: translate(-50%, -50%);
-  border: 2px solid #fff !important;
-  cursor: pointer;
-  font-weight: 600 !important;
-  text-align: center;
-  z-index: 1;
-  display: block;
+    position: fixed;
+    top: 100px;
+    right: 20px;
 }
 
 .fa {
