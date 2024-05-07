@@ -87,7 +87,7 @@ body {
 
 .tab-primary {
   background: linear-gradient(60deg, #cb2d3e, #ef473a);
-  border-radius: 6pt 0 0 6pt;
+  border-radius: 6px 0 0 6px;
 }
 
 .tab-success {
@@ -100,7 +100,7 @@ body {
 
 .tab-warning {
   background: linear-gradient(60deg, #ff8c42, #ff3c38);
-  border-radius: 0 6pt 6pt 0;
+  border-radius: 0 6px 6px 0;
 }
 
 .tab-selector:checked + .tab {
