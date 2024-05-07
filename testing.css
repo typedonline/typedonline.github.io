@@ -25,7 +25,7 @@ body {
   font-family: "Playfair Display SC";
 }
 .wrapper {
-  background-color: #f6f8ff;
+  background-color: #000000;
   width: 100%;
   min-height: 100vh;
   min-width: 90vh;
@@ -33,16 +33,6 @@ body {
   opacity: 1;
 }
 
-.wrapper.pre {
-  background-size: cover !important;
-  background: url(https://images.unsplash.com/photo-1523633589114-88eaf4b4f1a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3870&q=80);
-  background: url(https://images.unsplash.com/photo-1462556791646-c201b8241a94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2896&q=80);
-  position: absolute;
-  top: 0;
-  z-index: -2;
-  opacity: 0.75;
-  background: url(https://assets.codepen.io/4927073/mybg.jpg);
-}
 
 .wrapper .line {
   width: 50%;
