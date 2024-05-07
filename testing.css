@@ -14,7 +14,9 @@ body {
   margin: 0;
   height: 100%;
   font-family: "Roboto", sans-serif;
-  background: linear-gradient(#141e30, #243b55);
+  background-color: #000000; /* Set background color to black */
+}
+
 }
 .title {
   text-align: center;
