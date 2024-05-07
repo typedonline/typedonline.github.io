@@ -1,32 +1,5 @@
-.container {
-  height: 900px;
-  /*temp height for demo*/
-}
-
-.container ul {
-  position: fixed;
-}
-
-.container ul li {
-  list-style-type: none;
-}
-
-.social-media-button {
+#fixedbutton {
     position: fixed;
-    top: 100px;
-    right: 20px;
-}
-
-.fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.btn-outline-light {
-  color: #f8f9fa;
-  border-color: #f8f9fa;
+    bottom: 0px;
+    right: 0px; 
 }
