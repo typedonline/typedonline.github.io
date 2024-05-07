@@ -4,7 +4,7 @@
     right: 20px; 
 }
 
-
+/* Add your CSS styles here */
 /* Basic */
 @import url("https://use.typekit.net/ovt6ynt.css");
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Spectral:wght@200;300;400;500;600;700;800&display=swap");
@@ -17,7 +17,6 @@ body {
   background-color: #000000; /* Set background color to black */
 }
 
-}
 .title {
   text-align: center;
   padding: 50px 0px 25px 0;
@@ -34,7 +33,6 @@ body {
   background: transparent;
   opacity: 1;
 }
-
 
 .wrapper .line {
   width: 50%;
