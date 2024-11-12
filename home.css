@@ -1,5 +1,8 @@
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
+/* Reset and Global Styling */
 * {
     margin: 0;
     padding: 0;
@@ -7,23 +10,88 @@
 }
 
 body {
-    font-family: 'Exo', sans-serif;
-    background-color: #000000;
+    font-family: 'Roboto', sans-serif;
+    background-color: #101214;
+    color: #7A7C80;
     overflow-x: hidden;
 }
 
-.context {
-    width: 100%;
-    position: relative;
-    z-index: 1;
-}
-
-.context h1 {
-    text-align: center;
+h2, .white {
     color: #fff;
-    font-size: 50px;
 }
 
+a {
+    color: #7A7C80;
+    text-decoration: none;
+}
+
+/* Grid Layout for Two-Column Design */
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Section 1 Styling */
+.section-1 {
+    padding-top: 40vh;
+    text-align: center;
+}
+
+.section-1 p {
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.section-1 h2 {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.section-1 a {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.section-1 a:hover {
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Section 2 Styling */
+.section-2 {
+    padding-top: 10vh;
+    width: 70%;
+}
+
+.section-2 h2 {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.section-2 p {
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.section-2 a {
+    display: block;
+    padding: 5px;
+    font-size: 1.2rem;
+    padding-left: 0;
+    width: 100px;
+}
+
+.section-2 a:hover {
+    font-size: 1.3rem;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Animated Background Circles */
 .area {
     position: fixed;
     top: 0;
@@ -51,61 +119,81 @@ body {
 
 .circles li:nth-child(1) {
     left: 5%;
-    width: 20px; /* Adjust size as needed */
-    height: 20px; /* Adjust size as needed */
+    width: 20px;
+    height: 20px;
     background: #333333;
     animation-delay: 0s;
-    animation-duration: 10s; /* Adjust speed as needed */
+    animation-duration: 10s;
 }
 
 .circles li:nth-child(2) {
-    left: 25%; /* Adjust left position */
-    width: 25px; /* Adjust size as needed */
-    height: 25px; /* Adjust size as needed */
+    left: 25%;
+    width: 25px;
+    height: 25px;
     background: #555555;
-    animation-delay: 3s; /* Adjust delay as needed */
-    animation-duration: 12s; /* Adjust speed as needed */
+    animation-delay: 3s;
+    animation-duration: 12s;
 }
 
 .circles li:nth-child(3) {
-    left: 45%; /* Adjust left position */
-    width: 30px; /* Adjust size as needed */
-    height: 30px; /* Adjust size as needed */
+    left: 45%;
+    width: 30px;
+    height: 30px;
     background: #777777;
-    animation-delay: 6s; /* Adjust delay as needed */
-    animation-duration: 8s; /* Adjust speed as needed */
+    animation-delay: 6s;
+    animation-duration: 8s;
 }
 
 .circles li:nth-child(4) {
-    left: 65%; /* Adjust left position */
-    width: 35px; /* Adjust size as needed */
-    height: 35px; /* Adjust size as needed */
+    left: 65%;
+    width: 35px;
+    height: 35px;
     background: #999999;
-    animation-delay: 9s; /* Adjust delay as needed */
-    animation-duration: 15s; /* Adjust speed as needed */
+    animation-delay: 9s;
+    animation-duration: 15s;
 }
 
 .circles li:nth-child(5) {
-    left: 85%; /* Adjust left position */
-    width: 40px; /* Adjust size as needed */
-    height: 40px; /* Adjust size as needed */
+    left: 85%;
+    width: 40px;
+    height: 40px;
     background: #b0b0b0;
-    animation-delay: 12s; /* Adjust delay as needed */
-    animation-duration: 10s; /* Adjust speed as needed */
+    animation-delay: 12s;
+    animation-duration: 10s;
 }
 
-/* Add more cube styles here */
-
+/* Animation for Circles */
 @keyframes animate {
     0% {
         transform: translateY(0) rotate(0deg);
         opacity: 1;
         border-radius: 0;
     }
-
     100% {
         transform: translateY(-200vh) rotate(720deg);
         opacity: 0;
         border-radius: 50%;
+    }
+}
+
+/* Hover Effect */
+.white:hover {
+    position: relative;
+    padding-left: 10px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 780px) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+    .section-1 {
+        padding: 0;
+        padding-top: 5rem;
+    }
+    .section-2 {
+        padding: 0;
+        padding-left: 1.5rem;
+        padding-top: 2rem;
     }
 }
