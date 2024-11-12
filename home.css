@@ -187,25 +187,34 @@ a {
     .grid-2 {
         grid-template-columns: 1fr;
     }
-    .section-1 {
-        padding: 0;
-        padding-top: 5rem;
-    }
-    .section-2 {
-        padding: 0;
-        padding-left: 1.5rem;
-        padding-top: 2rem;
-    }
+  /* Section 1 Flex Layout */
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40vh;
+    text-align: center;
+}
 
-    .youtube-stats {
+/* Separate the header content from YouTube stats */
+.section-1 .header {
+    margin-bottom: 20px; /* Add space between header and YouTube stats */
+}
+
+/* Style the YouTube Stats */
+.youtube-stats {
     display: flex;
     justify-content: center;
-    gap: 15px; /* Space between the images */
-    margin-top: 15px; /* Adds space above the YouTube cards */
+    gap: 15px;
 }
 
 .youtube-stats p {
     margin: 0;
 }
 
-}
+    .section-2 {
+        padding: 0;
+        padding-left: 1.5rem;
+        padding-top: 2rem;
+    }
+
