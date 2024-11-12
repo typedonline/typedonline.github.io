@@ -196,4 +196,16 @@ a {
         padding-left: 1.5rem;
         padding-top: 2rem;
     }
+
+    .youtube-stats {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between the images */
+    margin-top: 15px; /* Adds space above the YouTube cards */
+}
+
+.youtube-stats p {
+    margin: 0;
+}
+
 }
