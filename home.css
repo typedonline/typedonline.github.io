@@ -27,15 +27,15 @@ body {
 }
 
 
-/* Container for both "Typed" and "Perth, WA" */
+
 .section-1 {
   position: fixed;
   top: 50%; /* Vertically center the container */
-  left: 50%; /* Move the container to the left side but with some space */
-  transform: translate(-50%, -50%); /* Adjust for perfect centering */
-  text-align: center; /* Center the text horizontally inside the container */
-  z-index: 10000; /* Ensure it stays on top */
-  display: block; /* Ensure the container behaves like a block */
+  left: 30px; /* Adjust the left position to create space from the edge */
+  transform: translateY(-50%); /* Perfectly center it vertically */
+  text-align: left; /* Align text to the left within this section */
+  z-index: 10000; /* Ensure it's on top */
+  padding-left: 10px; /* Optional: Adds padding for left text */
 }
 
 .section-1 h2 {
