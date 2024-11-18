@@ -1,7 +1,5 @@
-/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-/* Reset and Global Styling */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +13,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Grid Layout for Two-Column Design */
 .grid-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -26,7 +23,6 @@ body {
     color: #7A7C80;
 }
 
-/* Section 1 Styling */
 .section-1 {
     display: flex;
     flex-direction: column;
@@ -39,7 +35,7 @@ body {
 .section-1 h2 {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: #fff; /* Set heading 2 to white */
+    color: #fff;
 }
 
 .section-1 p {
@@ -51,7 +47,7 @@ body {
 .section-1 a {
     font-size: 1.5rem;
     padding: 10px;
-    color: #F8F8E7; /* Very faint yellow close to white */
+    color: #F8F8E7;
 }
 
 .section-1 a:hover {
@@ -60,37 +56,33 @@ body {
     transition: 0.3s;
 }
 
-/* Ensure proper spacing for section titles */
 .section-2 h2 {
-  font-size: 1.5rem; /* Uniform font size for all titles */
-  color: #ffffff; /* Golden accent color */
-  margin-top: 20px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #333; /* Minimal underline divider */
-  padding-bottom: 5px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
 }
 
-/* Styling for links */
 .section-2 a {
-  color: #F8F8E7; /* Softer purple for links */
-  text-decoration: none; /* Remove underline */
-  display: block; /* Each link on a new line */
-  margin: 5px 0;
-  transition: color 0.3s ease;
+    color: #F8F8E7;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+    transition: color 0.3s ease;
 }
 
 .section-2 a:hover {
-  color: #FFD700; /* Golden color on hover */
+    color: #FFD700;
 }
 
-/* Adjust spacing between text blocks */
 .section-2 p {
-  margin: 10px 0; /* Space between paragraphs */
-  color: #ccc; /* Softer text color */
-  font-size: 1rem; /* Consistent font size */
+    margin: 10px 0;
+    color: #ccc;
+    font-size: 1rem;
 }
 
-/* Mobile responsiveness adjustments */
 @media (max-width: 768px) {
   .section-2 {
     padding: 15px;
@@ -102,7 +94,6 @@ body {
   }
 }
 
-/* Background Animation Styling */
 .area {
     position: fixed;
     top: 0;
@@ -146,7 +137,6 @@ body {
     }
 }
 
-/* Media Queries */
 @media (max-width: 780px) {
     .grid-2 {
         grid-template-columns: 1fr;
@@ -163,43 +153,41 @@ body {
 .stats-container {
   display: flex;
   justify-content: space-between;
-  gap: 20px; /* Adds spacing between items */
+  gap: 20px;
   padding: 20px 0;
-  border-top: 1px solid #333; /* Minimal divider */
+  border-top: 1px solid #333;
   margin-top: 20px;
-  color: #fff; /* White text for consistency */
+  color: #fff;
 }
 
 .stat {
-  flex: 1; /* Ensures equal width for all items */
+  flex: 1;
   text-align: center;
 }
 
 .stat h3 {
-  font-size: 2rem; /* Balanced font size */
+  font-size: 2rem;
   margin: 0;
-  color: #FFD700; /* Accent color */
+  color: #FFD700;
   position: relative;
 }
 
 .stat h3::after {
-  content: "+"; /* Adds a + sign after the number */
-  font-size: 1.2rem; /* Slightly smaller + sign */
-  margin-left: 5px; /* Space between the number and the + sign */
+  content: "+";
+  font-size: 1.2rem;
+  margin-left: 5px;
 }
-
 
 .stat p {
   margin-top: 5px;
   font-size: 1rem;
-  color: #ccc; /* Muted secondary text */
+  color: #ccc;
 }
 
-/* Mobile styling */
 @media (max-width: 768px) {
   .stats-container {
     flex-direction: column;
-    align-items: center; /* Center align on small screens */
+    align-items: center;
     gap: 15px;
   }
 }
