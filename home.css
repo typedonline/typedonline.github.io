@@ -179,7 +179,15 @@ body {
   font-size: 2rem; /* Balanced font size */
   margin: 0;
   color: #FFD700; /* Accent color */
+  position: relative;
 }
+
+.stat h3::after {
+  content: "+"; /* Adds a + sign after the number */
+  font-size: 1.2rem; /* Slightly smaller + sign */
+  margin-left: 5px; /* Space between the number and the + sign */
+}
+
 
 .stat p {
   margin-top: 5px;
