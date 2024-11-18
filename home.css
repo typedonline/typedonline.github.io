@@ -150,27 +150,36 @@ body {
 }
 .stats-container {
   display: flex;
-  justify-content: space-around;
-  padding: 20px;
-  background: none; /* No background for a minimal look */
-  color: #fff; /* White text */
-  border-top: 1px solid #333; /* Subtle separation line */
+  justify-content: space-between;
+  gap: 20px; /* Adds spacing between items */
+  padding: 20px 0;
+  border-top: 1px solid #333; /* Minimal divider */
   margin-top: 20px;
+  color: #fff; /* White text for consistency */
 }
 
 .stat {
+  flex: 1; /* Ensures equal width for all items */
   text-align: center;
 }
 
 .stat h3 {
-  font-size: 2.5rem; /* Clean, large font */
+  font-size: 2rem; /* Balanced font size */
   margin: 0;
-  font-weight: bold;
-  color: #FFD700; /* Subtle accent color */
+  color: #FFD700; /* Accent color */
 }
 
 .stat p {
   margin-top: 5px;
   font-size: 1rem;
-  color: #ccc; /* Secondary text color */
+  color: #ccc; /* Muted secondary text */
+}
+
+/* Mobile styling */
+@media (max-width: 768px) {
+  .stats-container {
+    flex-direction: column;
+    align-items: center; /* Center align on small screens */
+    gap: 15px;
+  }
 }
