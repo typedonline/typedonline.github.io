@@ -27,10 +27,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 20vh;
+    justify-content: center;  
+    height: 100vh; 
     text-align: center;
+    padding: 0 20px;  
     color: #fff;
 }
+
 
 .section-1 h2 {
     font-size: 2rem;
