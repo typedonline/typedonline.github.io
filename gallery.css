@@ -1,0 +1,108 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #101214;
+  color: #7A7C80;
+  overflow-x: hidden;
+}
+
+/* Section 1 Styles */
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  text-align: center;
+  color: #fff;
+}
+
+.section-1 h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.section-1 p {
+  font-size: 1.1rem;
+}
+
+/* Gallery Grid */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.gallery {
+  padding: 20px;
+}
+
+.project-item {
+  position: relative;
+  overflow: hidden;
+  background-color: #333;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.project-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.project-item h3 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0;
+}
+
+.project-item p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 1rem;
+  color: #FFD700;
+  margin-top: 5px;
+}
+
+/* Hover Effects */
+.project-item:hover {
+  transform: scale(1.05);
+}
+
+.project-item a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+.project-item a:hover h3, .project-item a:hover p {
+  color: #FFD700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+  .section-1 h2 {
+    font-size: 2rem;
+  }
+  .section-1 p {
+    font-size: 1rem;
+  }
+}
