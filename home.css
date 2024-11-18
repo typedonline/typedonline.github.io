@@ -27,22 +27,27 @@ body {
 }
 
 
+/* Container for both "Typed" and "Perth, WA" */
 .section-1 {
-    position: fixed;
-    top: 50%; /* Vertically center the container */
-    left: 0;  /* Align to the left side */
-    transform: translateY(-50%); /* Adjust for perfect vertical centering */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center the content horizontally */
-    padding-left: 20px;  /* Optional: Adds space from the edge */
-    z-index: 10000; /* Keep it on top of other content */
+  position: fixed;
+  top: 50%; /* Vertically center the container */
+  left: 50%; /* Move the container to the left side but with some space */
+  transform: translate(-50%, -50%); /* Adjust for perfect centering */
+  text-align: center; /* Center the text horizontally inside the container */
+  z-index: 10000; /* Ensure it stays on top */
+  display: block; /* Ensure the container behaves like a block */
 }
 
-.section-1 h2, .section-1 p {
-    color: #fff; /* White text */
-    margin: 0;
-    font-size: 1.5rem; /* Adjust the font size */
+.section-1 h2 {
+  font-size: 2rem; /* Larger font size for "Typed" */
+  color: #fff; /* White color */
+  margin-bottom: 0.5rem; /* Space between heading and "Perth, WA" */
+}
+
+.section-1 p {
+  font-size: 1rem; /* Smaller font size for "Perth, WA" */
+  color: #fff; /* White color */
+  margin: 0; /* Remove default margin */
 }
 
 
