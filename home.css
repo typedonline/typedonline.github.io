@@ -26,27 +26,25 @@ body {
     color: #7A7C80;
 }
 
-/* Section 1 Styling */
+
 .section-1 {
+    position: fixed;
+    top: 50%; /* Vertically center the container */
+    left: 0;  /* Align to the left side */
+    transform: translateY(-50%); /* Adjust for perfect vertical centering */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 20vh;
-    text-align: center;
-    color: #fff;
+    align-items: center; /* Center the content horizontally */
+    padding-left: 20px;  /* Optional: Adds space from the edge */
+    z-index: 10000; /* Keep it on top of other content */
 }
 
-.section-1 h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #fff; /* Set heading 2 to white */
-}
-
-.section-1 p {
-    font-size: 1.1rem;
-    padding-bottom: 10px;
+.section-1 h2, .section-1 p {
+    color: #fff; /* White text */
     margin: 0;
+    font-size: 1.5rem; /* Adjust the font size */
 }
+
 
 .section-1 a {
     font-size: 1.5rem;
