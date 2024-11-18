@@ -148,26 +148,36 @@ body {
         padding-top: 2rem;
     }
 }
-.stats {
+.stats-container {
   display: flex;
-  justify-content: space-evenly;
-  background-color: #111;
-  padding: 20px 0;
-  border-top: 2px solid #333;
+  justify-content: space-around;
+  margin: 50px 0;
+  background: linear-gradient(120deg, #FFD700, #FF8C00);
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.stats div {
+.stat {
   text-align: center;
-  color: #FFD700; /* Gold for emphasis */
+  color: #fff;
 }
 
-.stats h3 {
-  font-size: 2em;
+.stat h3 {
+  font-size: 3em;
   margin: 0;
+  animation: glow 1.5s infinite alternate;
 }
 
-.stats p {
-  margin: 5px 0 0;
-  font-size: 0.9em;
-  color: #ccc;
+.stat p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #FFD700;
+  }
+  to {
+    text-shadow: 0 0 20px #FF8C00, 0 0 30px #FFD700;
+  }
 }
