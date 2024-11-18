@@ -39,6 +39,7 @@ body {
 .section-1 h2 {
     font-size: 2rem;
     margin-bottom: 10px;
+    color: #fff; /* Set heading 2 to white */
 }
 
 .section-1 p {
@@ -50,7 +51,7 @@ body {
 .section-1 a {
     font-size: 1.5rem;
     padding: 10px;
-    color: #7A7C80;
+    color: #F8F8E7; /* Very faint yellow close to white */
 }
 
 .section-1 a:hover {
@@ -158,6 +159,7 @@ body {
         padding-top: 2rem;
     }
 }
+
 .stats-container {
   display: flex;
   justify-content: space-between;
