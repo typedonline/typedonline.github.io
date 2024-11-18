@@ -63,7 +63,7 @@ body {
 /* Ensure proper spacing for section titles */
 .section-2 h2 {
   font-size: 1.5rem; /* Uniform font size for all titles */
-  color: #FFD700; /* Golden accent color */
+  color: #ffffff; /* Golden accent color */
   margin-top: 20px;
   margin-bottom: 10px;
   border-bottom: 1px solid #333; /* Minimal underline divider */
@@ -72,7 +72,7 @@ body {
 
 /* Styling for links */
 .section-2 a {
-  color: #6A5ACD; /* Softer purple for links */
+  color: #F8F8E7; /* Softer purple for links */
   text-decoration: none; /* Remove underline */
   display: block; /* Each link on a new line */
   margin: 5px 0;
