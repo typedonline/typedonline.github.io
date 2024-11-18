@@ -26,30 +26,27 @@ body {
     color: #7A7C80;
 }
 
-
-
+/* Section 1 Styling */
 .section-1 {
-  position: fixed;
-  top: 50%; /* Vertically center the container */
-  left: 30px; /* Adjust the left position to create space from the edge */
-  transform: translateY(-50%); /* Perfectly center it vertically */
-  text-align: left; /* Align text to the left within this section */
-  z-index: 10000; /* Ensure it's on top */
-  padding-left: 10px; /* Optional: Adds padding for left text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20vh;
+    text-align: center;
+    color: #fff;
 }
 
 .section-1 h2 {
-  font-size: 2rem; /* Larger font size for "Typed" */
-  color: #fff; /* White color */
-  margin-bottom: 0.5rem; /* Space between heading and "Perth, WA" */
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #fff; /* Set heading 2 to white */
 }
 
 .section-1 p {
-  font-size: 1rem; /* Smaller font size for "Perth, WA" */
-  color: #fff; /* White color */
-  margin: 0; /* Remove default margin */
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin: 0;
 }
-
 
 .section-1 a {
     font-size: 1.5rem;
