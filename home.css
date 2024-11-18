@@ -148,3 +148,26 @@ body {
         padding-top: 2rem;
     }
 }
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #111;
+  padding: 20px 0;
+  border-top: 2px solid #333;
+}
+
+.stats div {
+  text-align: center;
+  color: #FFD700; /* Gold for emphasis */
+}
+
+.stats h3 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.stats p {
+  margin: 5px 0 0;
+  font-size: 0.9em;
+  color: #ccc;
+}
