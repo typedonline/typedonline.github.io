@@ -4,6 +4,20 @@ const usernameInput = document.getElementById("username");
 const messageInput = document.getElementById("message");
 const sendMessageButton = document.getElementById("sendMessage");
 
+let isAdmin = false;  // Track if the user is logged in as admin
+
+// Admin login function
+function loginAsAdmin() {
+  const password = prompt("Enter Admin Password");
+  if (password === "1234") {
+    isAdmin = true;
+    alert("You are now logged in as admin!");
+  } else {
+    alert("Incorrect password. Admin access denied.");
+  }
+}
+
+// Fetch chat logs from Google Apps Script
 async function fetchChatLogs() {
   try {
     const response = await fetch(`${scriptUrl}?action=getChatLogs`);
@@ -21,6 +35,7 @@ async function fetchChatLogs() {
   }
 }
 
+// Send message to Google Apps Script
 async function sendMessage() {
   const username = usernameInput.value.trim();
   const message = messageInput.value.trim();
@@ -30,24 +45,8 @@ async function sendMessage() {
     return;
   }
 
-const adminPassword = "1234";  // Replace with your chosen password
-let isAdmin = false;
-
-// Admin login function
-function loginAsAdmin() {
-  const password = prompt("Enter Admin Password");
-  if (password === adminPassword) {
-    isAdmin = true;
-    alert("You are now logged in as admin!");
-  } else {
-    alert("Incorrect password. Admin access denied.");
-  }
-}
-
-// Use `isAdmin` to control admin-only features
-
-
   const payload = { username, message };
+
   try {
     const response = await fetch(`${scriptUrl}?action=logMessage`, {
       method: "POST",
@@ -65,5 +64,13 @@ function loginAsAdmin() {
   }
 }
 
-sendMessageButton.addEventListener("click", sendMessage);
-setInterval(fetchChatLogs, 5000); // Refresh chat logs every 5 seconds
+// Admin access check (optional step)
+sendMessageButton.addEventListener("click", () => {
+  if (!isAdmin) {
+    loginAsAdmin();  // Prompt for admin login if not logged in
+  } else {
+    sendMessage();
+  }
+});
+
+setInterval(fetchChatLogs, 5000);  // Refresh chat logs every 5 seconds
