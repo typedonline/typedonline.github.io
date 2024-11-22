@@ -1,4 +1,4 @@
-const scriptUrl = "https://cors.bridged.cc/https://script.google.com/macros/s/AKfycbyBNzA5iAqu40tXRZqn7GLcg3clVtTV2fsnL0vSQyT8WurjxA0EA5trvCmUarjw5ZZVHw/exec";
+const scriptUrl = "https://script.google.com/macros/s/AKfycbyuhGBqQmZS8LU3EPgbd2t_teV3Cb1EgKzrefF4yOY7K10e3KNnMpFAJ2wlMaAMDUoO6Q/exec";
 const chatBox = document.getElementById("chatBox");
 const usernameInput = document.getElementById("username");
 const messageInput = document.getElementById("message");
