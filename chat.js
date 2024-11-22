@@ -1,4 +1,4 @@
-const scriptUrl = "https://cors-anywhere.herokuapp.com/https://script.google.com/macros/s/AKfycbyBNzA5iAqu40tXRZqn7GLcg3clVtTV2fsnL0vSQyT8WurjxA0EA5trvCmUarjw5ZZVHw/exec";
+const scriptUrl = "https://elderly-grass-elm.glitch.me/proxy";
 const chatBox = document.getElementById("chatBox");
 const usernameInput = document.getElementById("username");
 const messageInput = document.getElementById("message");
@@ -30,10 +30,22 @@ async function sendMessage() {
     return;
   }
 
-  if (username.toLowerCase() === "admin") {
-    alert("The username 'admin' is reserved.");
-    return;
+const adminPassword = "1234";  // Replace with your chosen password
+let isAdmin = false;
+
+// Admin login function
+function loginAsAdmin() {
+  const password = prompt("Enter Admin Password");
+  if (password === adminPassword) {
+    isAdmin = true;
+    alert("You are now logged in as admin!");
+  } else {
+    alert("Incorrect password. Admin access denied.");
   }
+}
+
+// Use `isAdmin` to control admin-only features
+
 
   const payload = { username, message };
   try {
