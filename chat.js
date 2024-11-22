@@ -1,21 +1,26 @@
-const scriptUrl = "https://script.google.com/macros/s/AKfycbyV54rzzQFNZOP_RdjEDszX5RM4yOGGnxnki88Ncheb0n6puQD23lptAwQSTdQw27OmCQ/exec";
+const scriptUrl = "https://script.google.com/macros/s/AKfycbzXqH2nXxKigcY3CTZ-6dh46ebQZT3Vp5CIvsD1HqmtPZyCvZIpLvcI7Hq6vdoQq10vCg/exec";
 const chatBox = document.getElementById("chatBox");
 const usernameInput = document.getElementById("username");
 const messageInput = document.getElementById("message");
 const sendMessageButton = document.getElementById("sendMessage");
 
-let isAdmin = false;  // Track if the user is logged in as admin
+const adminPassword = "1234";  // Set your chosen password here
+let isAdmin = false;
 
 // Admin login function
 function loginAsAdmin() {
   const password = prompt("Enter Admin Password");
-  if (password === "1234") {
+  if (password === adminPassword) {
     isAdmin = true;
     alert("You are now logged in as admin!");
   } else {
     alert("Incorrect password. Admin access denied.");
   }
 }
+
+// Trigger login only when needed
+// For example, call loginAsAdmin() on button click or other condition
+
 
 // Fetch chat logs from Google Apps Script
 async function fetchChatLogs() {
