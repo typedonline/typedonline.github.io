@@ -1,4 +1,4 @@
-const scriptUrl = "https://script.google.com/macros/s/AKfycbyuhGBqQmZS8LU3EPgbd2t_teV3Cb1EgKzrefF4yOY7K10e3KNnMpFAJ2wlMaAMDUoO6Q/exec";
+const scriptUrl = "https://script.google.com/macros/s/AKfycbyV54rzzQFNZOP_RdjEDszX5RM4yOGGnxnki88Ncheb0n6puQD23lptAwQSTdQw27OmCQ/exec";
 const chatBox = document.getElementById("chatBox");
 const usernameInput = document.getElementById("username");
 const messageInput = document.getElementById("message");
