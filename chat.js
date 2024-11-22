@@ -1,19 +1,24 @@
-const scriptUrl = "https://script.google.com/macros/s/AKfycbzQ0fXv8ybxc7KK-yff36X7s6wrrhkt6j15RyfcnxJZ_5TSkqZ_58y03chOJfEmu4_NKw/exec";
+const scriptUrl = "https://script.google.com/macros/s/AKfycbyBNzA5iAqu40tXRZqn7GLcg3clVtTV2fsnL0vSQyT8WurjxA0EA5trvCmUarjw5ZZVHw/exec"; // Replace with your Apps Script URL
 const chatBox = document.getElementById("chatBox");
 const usernameInput = document.getElementById("username");
 const messageInput = document.getElementById("message");
 const sendMessageButton = document.getElementById("sendMessage");
 
 async function fetchChatLogs() {
-  const response = await fetch(`${scriptUrl}?action=getChatLogs`);
-  const logs = await response.json();
-
-  chatBox.innerHTML = "";
-  logs.forEach(([timestamp, username, message]) => {
-    const chatEntry = document.createElement("p");
-    chatEntry.textContent = `[${new Date(timestamp).toLocaleTimeString()}] ${username}: ${message}`;
-    chatBox.appendChild(chatEntry);
-  });
+  try {
+    const response = await fetch(`${scriptUrl}?action=getChatLogs`);
+    if (!response.ok) throw new Error(`Error fetching chat logs: ${response.status}`);
+    
+    const logs = await response.json();
+    chatBox.innerHTML = "";
+    logs.forEach(([timestamp, username, message]) => {
+      const chatEntry = document.createElement("p");
+      chatEntry.textContent = `[${new Date(timestamp).toLocaleTimeString()}] ${username}: ${message}`;
+      chatBox.appendChild(chatEntry);
+    });
+  } catch (error) {
+    console.error(error.message);
+  }
 }
 
 async function sendMessage() {
@@ -31,14 +36,21 @@ async function sendMessage() {
   }
 
   const payload = { username, message };
-  await fetch(`${scriptUrl}?action=logMessage`, {
-    method: "POST",
-    body: JSON.stringify(payload),
-    headers: { "Content-Type": "application/json" }
-  });
+  try {
+    const response = await fetch(`${scriptUrl}?action=logMessage`, {
+      method: "POST",
+      body: JSON.stringify(payload),
+      headers: { "Content-Type": "application/json" },
+    });
+    const result = await response.text();
+    if (!response.ok) throw new Error(result);
 
-  messageInput.value = "";
-  fetchChatLogs();
+    messageInput.value = "";
+    fetchChatLogs();
+  } catch (error) {
+    console.error(error.message);
+    alert("Failed to send message. Check console for details.");
+  }
 }
 
 sendMessageButton.addEventListener("click", sendMessage);
