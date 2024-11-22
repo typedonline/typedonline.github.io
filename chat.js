@@ -1,4 +1,4 @@
-const scriptUrl = "https://elderly-grass-elm.glitch.me/proxy";
+const scriptUrl = "https://proxy.cors.sh/https://script.google.com/macros/s/AKfycbyBNzA5iAqu40tXRZqn7GLcg3clVtTV2fsnL0vSQyT8WurjxA0EA5trvCmUarjw5ZZVHw/exec";
 const chatBox = document.getElementById("chatBox");
 const usernameInput = document.getElementById("username");
 const messageInput = document.getElementById("message");
